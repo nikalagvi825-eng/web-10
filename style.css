@@ -97,7 +97,8 @@ header, .home,.login{
 }
 .recipe-search{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
     flex-wrap: wrap;
     gap: 12px;
 }
@@ -224,4 +225,240 @@ p.search-note{
 .category-card{
     font-family: dmsemibold;
     font-size: 15px;
+}
+.featured-recipes{
+    box-sizing: border-box;
+    width: min(1279px, calc(100% - 48px));
+    margin: 42px auto 64px;
+}
+.featured-heading{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.featured-heading h2{
+    margin: 0 0 8px;
+    color: #263326;
+    font: 32px lora;
+}
+.featured-heading p{
+    margin: 0;
+    color: #61685e;
+    font: 15px dmreg;
+}
+.featured-heading .featured-link{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmsemibold;
+}
+.featured-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+.featured-card{
+    box-sizing: border-box;
+    height: 429px;
+    min-width: 0;
+    overflow: hidden;
+}
+.featured-card img{
+    display: block;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.featured-card h3{
+    margin: 16px 0 8px;
+    color: #263326;
+    font: 20px dmsemibold;
+}
+.featured-card p{
+    margin: 0;
+    color: #61685e;
+    font: 15px/1.5 dmreg;
+}
+@media (max-width: 760px){
+    .featured-recipes{ width: calc(100% - 32px); }
+    .featured-heading{ gap: 16px; }
+    .featured-heading h2{ font-size: 26px; }
+    .featured-list{ grid-template-columns: 1fr; gap: 24px; }
+    .featured-card{ height: auto; }
+    .featured-card img{ height: 240px; }
+}
+#featured-title{
+    font-family: lora;
+}
+#inspo{
+    font-family: dmreg;
+}
+#prep{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmbold;
+}
+#h3under{
+    font-family: dmsemibold;
+    font-size: 22px;
+}
+#emaaw{
+    font-size: 13px;
+    font-family: dmreg;
+}
+#clockgl{
+    width: 24px;
+    height: 24px;
+}
+.clockandtxt{
+    display: flex;
+    margin-top: 14.5px;
+}
+#min20{
+color: rgba(110, 114, 104, 1);
+font-family: dmreg;
+font-size: 13px;
+margin-left: 8px;
+margin-top: 3px;
+}
+#easy{
+    color: rgba(110, 114, 104, 1);
+    font-family: dmreg;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-top: 3px;
+}
+#star{
+    width: 24px;
+    height: 24px;
+}
+.mtavaridiv{
+    display: flex;
+    justify-content: space-between;
+}
+.varskvlavi{
+    display: flex;
+}
+#otxicxra{
+    margin-left: 5px;
+}
+.boloseqcia{
+    width: 1280px;
+    height: 203px;
+    background-color: rgba(232, 235, 221, 1);
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 48px;
+    margin-top: 64px;
+    margin-right: 80px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+#buttongreen{
+    color: #fff;
+    background-color: rgba(82, 107, 79, 1);
+    padding: 14px 24px;
+    border-radius: 10px;
+    width: 209px;
+    height: 50px;
+    margin-top: 76.5px;
+    margin-right: 40px;
+    font-family: dmsemibold;
+}
+.teqstebi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.lilhelp{
+    font-size: 11px;
+    font-family: dmbold;
+    color: rgba(82, 107, 79, 1);
+}
+.fridge{
+    font-size: 36px;
+    font-family: lora;
+    color: rgba(37, 40, 32, 1);
+}
+.telluss{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmreg;
+}
+footer{
+    width: 100%;
+    height: 230px;
+    background-color:rgba(232, 235, 221, 1) ;
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#foodieed{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmbold;
+    font-size: 32px;
+    margin-left: 80px;
+
+}
+#goodfoodtaste{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmreg;
+    margin-left: 80px;
+}
+#footera{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmmed;
+    font-size: 14px;
+}
+.footer3a{
+margin-top: 48px;
+margin-right: 80px;
+}
+#footeraa{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmmed;
+    font-size: 14px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+#footerp3{
+    font-family: dmreg;
+    font-size: 12px;
+    color: rgba(82, 107, 79, 1);
+    margin-left: 80px;
+    margin-top: 32px;
+}
+#privacypol{
+    color: rgba(82, 107, 79, 1);
+    font-family: dmreg;
+    font-size: 12px;
+    margin-top: 127px;
+}
+.underdiv{
+    margin-top: 75px;
+}
+.inputcrave{
+    display: flex;
+    border: 2px solid rgb(217, 217, 217);
+    border-radius: 15px;
+}
+#input1{
+    border: none;
+}
+#searchglyph{
+    width: 24px;
+    height: 24px;
+    margin-top: 15px;
+}
+#guli{
+    height: 24px;
+    width: 24px;
+}
+.txtguli{
+    display: flex;
+    justify-content: space-between;
+}
+.footerp{
+    height: 11px;
 }
