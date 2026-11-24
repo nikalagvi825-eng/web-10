@@ -57,7 +57,7 @@ header, .home,.login{
      margin: 27px;
      font-family: dmsemibold;
 }
-.hero{
+.index .hero{
     box-sizing: border-box;
     width: min(1280px, calc(100% - 48px));
     height: 474px;
@@ -69,11 +69,11 @@ header, .home,.login{
     gap: 48px;
     border-radius: 20px;
 }
-.hero-copy{
+.index .hero-copy{
     flex: 1;
     min-width: 0;
 }
-.eyebrow{
+.index .eyebrow{
     margin: 0 0 14px;
     color: rgba(82, 107, 79, 1);
     font-size: 13px;
@@ -81,13 +81,13 @@ header, .home,.login{
     letter-spacing: 1.5px;
     font-family: dmbold;
 }
-.hero h1{
+.index .hero h1{
     margin: 0;
     color: #263326;
     font-size: clamp(38px, 4vw, 56px);
     line-height: 1.08;
 }
-.intro{
+.index .intro{
     max-width: 440px;
     margin: 18px 0 24px;
     color: #61685e;
@@ -95,14 +95,14 @@ header, .home,.login{
     line-height: 1.6;
     font-family: dmreg;
 }
-.recipe-search{
+.index .recipe-search{
     display: flex;
     flex-direction: column;
 
     flex-wrap: wrap;
     gap: 12px;
 }
-.recipe-search input{
+.index .recipe-search input{
     box-sizing: border-box;
     width: min(300px, 100%);
     height: 50px;
@@ -113,7 +113,7 @@ header, .home,.login{
     font: inherit;
     font-family: dmreg;
 }
-.recipe-search button{
+.index .recipe-search button{
     height: 50px;
     padding: 0 24px;
     border: 0;
@@ -124,24 +124,25 @@ header, .home,.login{
     cursor: pointer;
     font-family: dmsemibold;
 }
-.search-note{
+
+.index .search-note{
     margin: 2px 0 0;
     color: #73796f;
     font-size: 13px;
 }
-.hero-image{
+.index .hero-image{
     flex: 0 1 510px;
     margin: 0;
     text-align: center;
 }
-.hero-image img{
+.index .hero-image img{
     display: block;
     width: 100%;
     height: 330px;
     object-fit: cover;
     border-radius: 16px;
 }
-.hero-image figcaption{
+.index .hero-image figcaption{
     margin-top: 12px;
     color: #61685e;
     font-size: 14px;
@@ -149,28 +150,28 @@ header, .home,.login{
     margin-right: 54px;
     width: 146px;
 }
-.categories{
+.index .categories{
     box-sizing: border-box;
     width: min(1280px, calc(100% - 48px));
     height: 224px;
     margin: 28px auto 0;
     overflow: hidden;
 }
-.categories h2{
+.index .categories h2{
     margin: 0 0 16px;
     color: #263326;
     font-family: dmsemibold;
     font-size: 24px;
 }
-.category-list{
+.index .category-list{
     display: flex;
     gap: 32px;
 }
-.category-card{
+.index .category-card{
     flex: 0 0 174px;
     margin: 0;
 }
-.category-card img{
+.index .category-card img{
     display: block;
     width: 174px;
     height: 104px;
@@ -178,14 +179,14 @@ header, .home,.login{
     object-position: top;
     border-radius: 10px;
 }
-.category-card p{
+.index .category-card p{
     margin: 8px 0 0;
     color: #263326;
     font-family: dmmed;
     font-size: 14px;
 }
 @media (max-width: 760px){
-    .hero{
+    .index .hero{
         width: calc(100% - 32px);
         height: auto;
         min-height: 474px;
@@ -194,154 +195,180 @@ header, .home,.login{
         align-items: stretch;
         gap: 28px;
     }
-    .hero-image{ flex-basis: auto; }
-    .hero-image img{ height: 240px; }
+    .index .hero-image{ flex-basis: auto; }
+    .index .hero-image img{ height: 240px; }
 }
-.btndown{
+.index .btndown{
     display: flex;
 }
-.search-note{
+
+.index .search-note{
     margin-top: 24px;
     margin-left: 16px;
 }
 .home1{
-    color: rgba(82, 107, 79, 1);
     text-decoration: none;
+}
+header .home .nav-active{
+    color: rgba(82, 107, 79, 1);
 }
 a{
     text-decoration: none;
     color: black;
 }  
-#goodf{
+.index #goodf{
     font-family: lora;
 }
-p.search-note{
+.index p.search-note{
     font-family: dmreg;
 }
-#categories-title{
+.index #categories-title{
     font-family: lora;
     font-size: 32px;
 }
-.category-card{
+.index .category-card{
     font-family: dmsemibold;
     font-size: 15px;
 }
-.featured-recipes{
+.index .featured-recipes,
+.explore .featured-recipes{
     box-sizing: border-box;
     width: min(1279px, calc(100% - 48px));
     margin: 42px auto 64px;
 }
-.featured-heading{
+.index .featured-heading,
+.explore .featured-heading{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 24px;
 }
-.featured-heading h2{
+.index .featured-heading h2,
+.explore .featured-heading h2 {
     margin: 0 0 8px;
     color: #263326;
     font: 32px lora;
 }
-.featured-heading p{
+.index .featured-heading p,
+.explore .featured-heading p{
     margin: 0;
     color: #61685e;
     font: 15px dmreg;
 }
-.featured-heading .featured-link{
+.index .featured-heading .featured-link,
+.explore .featured-heading .featured-link{
     color: rgba(82, 107, 79, 1);
     font-family: dmsemibold;
 }
-.featured-list{
+.index .featured-list,
+.explore .featured-list{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
 }
-.featured-card{
+.index .featured-card,
+.explore .featured-card{
     box-sizing: border-box;
     height: 429px;
     min-width: 0;
     overflow: hidden;
 }
-.featured-card img{
+.index .featured-card img,
+.explore .featured-card img{
     display: block;
     width: 100%;
     height: 270px;
     object-fit: cover;
     border-radius: 12px;
 }
-.featured-card h3{
+.index .featured-card h3,
+.explore .featured-card h3{
     margin: 16px 0 8px;
     color: #263326;
     font: 20px dmsemibold;
 }
-.featured-card p{
+.index .featured-card p,
+.explore .featured-card p{
     margin: 0;
     color: #61685e;
     font: 15px/1.5 dmreg;
 }
 @media (max-width: 760px){
-    .featured-recipes{ width: calc(100% - 32px); }
-    .featured-heading{ gap: 16px; }
-    .featured-heading h2{ font-size: 26px; }
-    .featured-list{ grid-template-columns: 1fr; gap: 24px; }
-    .featured-card{ height: auto; }
-    .featured-card img{ height: 240px; }
+    .index .featured-recipes{ width: calc(100% - 32px); }
+    .index .featured-heading{ gap: 16px; }
+    .index .featured-heading h2{ font-size: 26px; }
+    .index .featured-list{ grid-template-columns: 1fr; gap: 24px; }
+    .index .featured-card{ height: auto; }
+    .index .featured-card img{ height: 240px; }
 }
-#featured-title{
+.index #featured-title,
+.explore #featured-title{
     font-family: lora;
 }
-#inspo{
+.index #inspo
+.explore #inspo{
     font-family: dmreg;
 }
-#prep{
+.index #prep,
+.explore #prep{
     color: rgba(82, 107, 79, 1);
     font-family: dmbold;
 }
-#h3under{
+.index #h3under,
+.explore #h3under{
     font-family: dmsemibold;
     font-size: 22px;
 }
-#emaaw{
+.index #emaaw,
+.explore #emaaw{
     font-size: 13px;
     font-family: dmreg;
 }
-#clockgl{
+.index #clockgl,
+.explore #clockgl{
     width: 24px;
     height: 24px;
 }
-.clockandtxt{
+.index .clockandtxt,
+.explore .clockandtxt{
     display: flex;
     margin-top: 14.5px;
 }
-#min20{
+.index #min20,
+.explore #min20{
 color: rgba(110, 114, 104, 1);
 font-family: dmreg;
 font-size: 13px;
 margin-left: 8px;
 margin-top: 3px;
 }
-#easy{
+.index #easy,
+.explore #easy{
     color: rgba(110, 114, 104, 1);
     font-family: dmreg;
     font-size: 13px;
     margin-left: 8px;
     margin-top: 3px;
 }
-#star{
+.index #star,
+.explore #star{
     width: 24px;
     height: 24px;
 }
-.mtavaridiv{
+.index .mtavaridiv,
+.explore .mtavaridiv{
     display: flex;
     justify-content: space-between;
 }
-.varskvlavi{
+.index .varskvlavi,
+.explore .varskvlavi{
     display: flex;
 }
-#otxicxra{
+.index #otxicxra,
+.explore #otxicxra{
     margin-left: 5px;
 }
-.boloseqcia{
+.index .boloseqcia{
     width: 1280px;
     height: 203px;
     background-color: rgba(232, 235, 221, 1);
@@ -353,7 +380,7 @@ margin-top: 3px;
     justify-content: space-between;
     border-radius: 20px;
 }
-#buttongreen{
+.index #buttongreen{
     color: #fff;
     background-color: rgba(82, 107, 79, 1);
     padding: 14px 24px;
@@ -364,22 +391,22 @@ margin-top: 3px;
     margin-right: 40px;
     font-family: dmsemibold;
 }
-.teqstebi{
+.index .teqstebi{
     display: flex;
     flex-direction: column;
     margin-left: 40px;
 }
-.lilhelp{
-    font-size: 11px;
+.index .lilhelp{
+    font-size: 12px;
     font-family: dmbold;
     color: rgba(82, 107, 79, 1);
 }
-.fridge{
+.index .fridge{
     font-size: 36px;
     font-family: lora;
     color: rgba(37, 40, 32, 1);
 }
-.telluss{
+.index .telluss{
     color: rgba(82, 107, 79, 1);
     font-family: dmreg;
 }
@@ -438,27 +465,138 @@ margin-right: 80px;
 .underdiv{
     margin-top: 75px;
 }
-.inputcrave{
+.index .inputcrave{
     display: flex;
     border: 2px solid rgb(217, 217, 217);
     border-radius: 15px;
 }
-#input1{
+.index #input1,
+.explore #input1{
     border: none;
 }
-#searchglyph{
+.index #searchglyph,
+.explore #searchglyph{
     width: 24px;
     height: 24px;
     margin-top: 15px;
 }
-#guli{
+.index #guli,
+.explore #guli{
     height: 24px;
     width: 24px;
 }
-.txtguli{
+.index .txtguli,
+.explore .txtguli{
     display: flex;
     justify-content: space-between;
 }
 .footerp{
-    height: 11px;
+    height: 12px;
+}
+.home2{
+    color: rgba(82, 107, 79, 1);
+    text-decoration: none;
+}
+.explore{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.favourite{
+    font-family: dmbold;
+    font-size: 12px;
+    color: rgba(82, 107, 79, 1);
+}
+.goodfood{
+    font-size: 48px;
+    font-family: lora;
+    color: (37, 40, 32, 1);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.everydayrecepie{
+    color: rgba(110, 114, 104, 1);
+    font-family: dmreg;
+}
+.didiseqcia{
+    width: 1280px;
+    height: 114px;
+    margin-left: 80px;
+    
+}
+.didiinputi{
+    width: 1280px;
+    height: 54px;
+    font-family: dmreg;
+    color: rgba(110, 114, 104, 1);
+}
+.mwvanebtn{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(82, 107, 79, 1);
+    border-radius: 30px;
+    width: 105px;
+    height: 40px;
+    font-family: dmmed;
+    margin-right: 10px;
+}
+.tetribtn{
+width: 105px;
+height: 40px;
+margin-right: 10px;
+border-radius: 30px;
+background-color: rgba(255, 255, 255, 1);
+border: none;
+color: rgba(82, 107, 79, 1);
+ font-family: dmmed;
+}
+.delicious9{
+    font-size: 15px;
+    font-family: dmreg;
+    color: rgba(110, 114, 104, 1);
+}
+.meniu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+select{
+    font-family: dmreg;
+    color: rgba(110, 114, 104, 1);
+    font-size: 15px;
+}
+label{
+color: rgba(110, 114, 104, 1);
+font-size: 15px;
+font-family: dmreg;
+}
+.pirvelibtn{
+    background-color: rgba(82, 107, 79, 1);
+    width: 54px;
+    height: 50px;
+    border-radius: 10px;
+      margin-right: 16px;
+}
+.sxvabtn{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(82, 107, 79, 1);
+     width: 54px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+.sxvabtn2{
+    width:100px;
+    height: 52px;
+    color: rgba(82, 107, 79, 1);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+     margin-right: 16px;
+}
+.gilakebi{
+    display: flex;
+    align-self: center;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
 }
